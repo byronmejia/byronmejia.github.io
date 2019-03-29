@@ -8,6 +8,10 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    h1, h2 {
+        margin: .25em 0;
+    }
+
     html, body {
         width: 100%;
         height: 100%;

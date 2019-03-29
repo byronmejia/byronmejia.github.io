@@ -1,9 +1,8 @@
-import styled from 'styled-components';
-import GlobalVariables from '../../styles/global-variables';
+import { styled } from "../../styles/styled";
 
 export const HomeLayout = styled.div`
     display: flex;
-    background-color: ${GlobalVariables.primaryBackground};
+    background-color: ${props => props.theme.primaryBackground};
     width: 100vw;
     height: 100vh;
     justify-content: center;

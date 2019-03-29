@@ -2,6 +2,9 @@ import React from 'react';
 import SEO from '../components/seo';
 import GlobalStyleWrapper from '../styles/global.style.wrapper';
 import HomeLayout from '../components/layouts/home';
+import { ThemeProvider } from 'styled-components';
+import PrimaryTheme from '../styles/theme';
+import { Profile } from '../components/home/profile';
 
 const IndexPage = () => (
     <GlobalStyleWrapper>
@@ -9,11 +12,11 @@ const IndexPage = () => (
             title='Byron Mejia'
             keywords={[`programming`, `health`, `developer`, `fitness`, `life`, `blog`]}
         />
-        <HomeLayout>
-            <h1>Hi people</h1>
-            <p>Welcome to your new Gatsby site.</p>
-            <p>Now go build something great.</p>
-        </HomeLayout>
+        <ThemeProvider theme={PrimaryTheme}>
+            <HomeLayout>
+                <Profile />
+            </HomeLayout>
+        </ThemeProvider>
     </GlobalStyleWrapper>
 );
 
