@@ -2,4 +2,5 @@
 /build/*
 !/build/.keep
 /dist/
-
+/.cache/
+/public/
