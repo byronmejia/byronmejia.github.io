@@ -1,0 +1,27 @@
+sudo: required
+
+language: node_js
+
+node_js:
+  - 'lts/*'
+
+cache:
+  directories:
+    - "node_modules"
+
+branches:
+  except:
+  - master
+
+script:
+- npm run build 
+
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local-dir: dist
+    fqdn: byronis.me
+    on:
+       branch: development
+    target-branch: master
