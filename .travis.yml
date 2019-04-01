@@ -20,7 +20,7 @@ deploy:
   - provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
-    local-dir: dist
+    local-dir: public
     fqdn: byronis.me
     on:
        branch: development
