@@ -27,13 +27,13 @@ export const Profile: FunctionComponent = () => (
             yourself.
         </Paragraph> */}
         <ButtonGroup>
-            <Button target="_blank" href="https://github.com/byronmejia">
+            <Button target="_blank" href="https://github.com/byronmejia" rel="noopener noreferrer" aria-label="Github">
                 <FontAwesomeIcon icon={faGithub} size="4x" />
             </Button>
-            <Button target="_blank" href="https://twitter.com/Byron__Mejia">
+            <Button target="_blank" href="https://twitter.com/Byron__Mejia" rel="noopener noreferrer" aria-label="Twitter">
                 <FontAwesomeIcon icon={faTwitter} size="4x" />
             </Button>
-            <Button target="_blank" href="https://www.linkedin.com/in/byronmejia/">
+            <Button target="_blank" href="https://www.linkedin.com/in/byronmejia/" rel="noopener noreferrer" aria-label="LinkedIn">
                 <FontAwesomeIcon icon={faLinkedin} size="4x" />
             </Button>
         </ButtonGroup>
