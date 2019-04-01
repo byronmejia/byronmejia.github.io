@@ -1,0 +1,8 @@
+{
+    "*.ts": [
+        "prettier --parser typescript --write --config ./.prettierrc",
+        "tslint --project ./tsconfig.json --config ./tslint.json --fix",
+        "git add"
+    ],
+    "*.json": ["prettier --parser json --write --config ./.prettierrc", "git add"]
+}
