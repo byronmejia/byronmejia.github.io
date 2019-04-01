@@ -14,7 +14,7 @@ branches:
   - master
 
 script:
-- npm run build 
+- yarn build 
 
 deploy:
   - provider: pages
