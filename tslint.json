@@ -1,6 +1,7 @@
 {
     "extends": ["@clipchamp/tslint-config", "tslint-react"],
     "rules": {
-        "jsx-no-multiline-js": false
+        "jsx-no-multiline-js": false,
+        "no-console": true
     }
 }

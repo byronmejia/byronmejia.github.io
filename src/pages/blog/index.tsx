@@ -16,8 +16,6 @@ interface BlogIndexProps {
 
 export const BlogIndex: FunctionComponent<BlogIndexProps> = props => {
     const posts = props.data.allMarkdownRemark.edges.map(x => x.node);
-
-    console.log(props);
     return (
         <div>
             <SEO
