@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Paragraph } from '../components/ui/typography/paragraph';
 import { Columns } from '../components/layouts/columns';
+import { MenuLayout } from '../layouts/menu.layout';
 
 const IndexPage = () => (
     <GlobalStyleWrapper>
@@ -35,7 +36,7 @@ const IndexPage = () => (
             description='I am a full stack developer based in Brisbane, Australia. Follow me on my life journey in programming, health and being a dog owner. Contact me if you need help with Angular, React, Typescript and node.js'
         />
         <ThemeProvider theme={PrimaryTheme}>
-            <Fragment>
+            <MenuLayout>
                 <HomeLayout>
                     <ProfileWrapper>
                         <Logo />
@@ -84,14 +85,19 @@ const IndexPage = () => (
                                     </Paragraph>
                                     <Paragraph>
                                         I first began programming in my first year of university at
-                                        QUT,
+                                        QUT, back in 2013. My introduction to programming was
+                                        MATLAB, and have since dabbled in a little bit of
+                                        everything. My time in university primarily focused on
+                                        embedded systems (C, TivaOS), but also spent the time to
+                                        learn modern front end development frameworks, and am now
+                                        proficient both React and Angular (2+).
                                     </Paragraph>
                                 </div>
                             </Columns>
                         </ProfileWrapper>
                     </ArticleLayout>
                 </ThemeProvider>
-            </Fragment>
+            </MenuLayout>
         </ThemeProvider>
     </GlobalStyleWrapper>
 );

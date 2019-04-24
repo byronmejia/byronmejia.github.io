@@ -3,6 +3,16 @@ module.exports = {
     title: `Byron Is Me`,
     description: `I am a software developer at Clipchamp, with a love for React, Angular and Typescript. Follow me on my journey through programming, fitness and life.`,
     author: `@byron__mejia`,
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'blog',
+        link: '/blog'
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-typescript`,
