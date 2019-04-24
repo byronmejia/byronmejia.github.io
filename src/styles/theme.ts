@@ -16,12 +16,3 @@ export const PrimaryTheme: ThemeRecord = {
     secondaryHighlight: '#56E39F',
 };
 export default PrimaryTheme;
-
-export const SecondaryTheme: ThemeRecord = {
-    primaryBackground: PrimaryTheme.primaryColor,
-    secondaryBackground: PrimaryTheme.secondaryColor,
-    primaryColor: '#000000',
-    secondaryColor: PrimaryTheme.secondaryBackground,
-    primaryHighlight: PrimaryTheme.secondaryHighlight,
-    secondaryHighlight: PrimaryTheme.primaryHighlight,
-};

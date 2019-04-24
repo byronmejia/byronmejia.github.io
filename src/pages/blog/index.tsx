@@ -1,8 +1,8 @@
 import { graphql } from 'gatsby';
 import { FunctionComponent } from 'react';
 import React from 'react';
-import SEO from '../../components/seo';
-import { Header } from '../../components/ui/typography/header.main';
+import SEO from '../../components/atomics/seo';
+import { Header } from '../../components/atomics/typography/header.main';
 import { BlogPreviewNode } from '../../components/blog/blog-preview.model';
 import { BlogPreview } from '../../components/blog/blog-preview.component';
 

@@ -1,4 +1,5 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
+import PrimaryTheme from './theme';
 
 export const GlobalStyle = createGlobalStyle`
     /* You can add global styles to this file, and also import other style files */
@@ -17,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
         height: 100%;
         margin: 0;
         font-family: 'Open Sans', sans-serif;
+        background-color: ${PrimaryTheme.primaryBackground}
     }
 
     @media print {

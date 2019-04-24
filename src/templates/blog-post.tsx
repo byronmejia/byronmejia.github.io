@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import SEO from '../components/seo';
+import SEO from '../components/atomics/seo';
 import { graphql } from 'gatsby';
 
 interface BlogPostTemplatePropType {

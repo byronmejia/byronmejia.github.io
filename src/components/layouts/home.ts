@@ -8,7 +8,6 @@ export const RegularLayout = styled.article`
 `;
 
 export const HomeLayout = styled(RegularLayout)`
-    background-color: ${props => props.theme.primaryBackground};
     width: 100vw;
     height: 100vh;
 `;

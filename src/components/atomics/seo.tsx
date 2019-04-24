@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent } from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
@@ -40,7 +40,7 @@ const SEO: FunctionComponent<SEOPropTypes> = ({
     author,
     image,
     audio,
-    video
+    video,
 }: SEOPropTypes) => (
     <StaticQuery
         query={detailsQuery}
@@ -52,49 +52,49 @@ const SEO: FunctionComponent<SEOPropTypes> = ({
             return (
                 <Helmet
                     htmlAttributes={{
-                        lang
+                        lang,
                     }}
                     title={metaTitle}
                     titleTemplate={`%s | ${site.siteMetadata.title}`}
                     meta={[
                         {
                             name: `description`,
-                            content: metaDescription
+                            content: metaDescription,
                         },
                         {
                             property: `og:title`,
-                            content: metaTitle
+                            content: metaTitle,
                         },
                         {
                             property: `og:description`,
-                            content: metaDescription
+                            content: metaDescription,
                         },
                         {
                             property: `og:type`,
-                            content: `website`
+                            content: `website`,
                         },
                         {
                             name: `twitter:card`,
-                            content: `summary`
+                            content: `summary`,
                         },
                         {
                             name: `twitter:creator`,
-                            content: metaAuthor
+                            content: metaAuthor,
                         },
                         {
                             name: `twitter:title`,
-                            content: metaTitle
+                            content: metaTitle,
                         },
                         {
                             name: `twitter:description`,
-                            content: metaDescription
-                        }
+                            content: metaDescription,
+                        },
                     ]
                         .concat(
                             metaKeywords.length > 0
                                 ? {
                                       name: `keywords`,
-                                      content: metaKeywords.join(`, `)
+                                      content: metaKeywords.join(`, `),
                                   }
                                 : []
                         )
@@ -103,16 +103,16 @@ const SEO: FunctionComponent<SEOPropTypes> = ({
                                 ? [
                                       {
                                           property: `og:image`,
-                                          content: image
+                                          content: image,
                                       },
                                       {
                                           property: `og:image:width`,
-                                          content: `1200`
+                                          content: `1200`,
                                       },
                                       {
                                           property: `og:image:height`,
-                                          content: `630`
-                                      }
+                                          content: `630`,
+                                      },
                                   ]
                                 : []
                         )
@@ -120,7 +120,7 @@ const SEO: FunctionComponent<SEOPropTypes> = ({
                             audio
                                 ? {
                                       property: `og:audio`,
-                                      content: audio
+                                      content: audio,
                                   }
                                 : []
                         )
@@ -128,7 +128,7 @@ const SEO: FunctionComponent<SEOPropTypes> = ({
                             video
                                 ? {
                                       property: `og:video`,
-                                      content: video
+                                      content: video,
                                   }
                                 : []
                         )
@@ -142,7 +142,7 @@ const SEO: FunctionComponent<SEOPropTypes> = ({
 SEO.defaultProps = {
     lang: `en`,
     meta: [],
-    keywords: []
+    keywords: [],
 };
 
 export default SEO;
