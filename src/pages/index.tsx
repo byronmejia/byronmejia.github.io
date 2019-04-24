@@ -43,7 +43,7 @@ const IndexPage = () => (
                     <ProfileWrapper>
                         <Logo />
                         <Header>Byron Mejia</Header>
-                        <Header as='p'>Software Developer @ Clipchamp</Header>
+                        <Header as='p'>Software Developer</Header>
                         <ButtonGroup>
                             <ButtonIcon
                                 target='_blank'
