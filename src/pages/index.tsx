@@ -10,7 +10,9 @@ import { Header } from '../components/ui/typography/header.main';
 import ButtonGroup from '../components/ui/button/button.group';
 import ButtonIcon from '../components/ui/button-icon/button-icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
+import { faCode } from '@fortawesome/free-solid-svg-icons/faCode';
 import { Paragraph } from '../components/ui/typography/paragraph';
 import { Columns } from '../components/layouts/columns';
 import { MenuLayout } from '../layouts/menu.layout';
@@ -45,14 +47,6 @@ const IndexPage = () => (
                         <ButtonGroup>
                             <ButtonIcon
                                 target='_blank'
-                                href='https://github.com/byronmejia'
-                                rel='noopener noreferrer'
-                                aria-label='Github'
-                            >
-                                <FontAwesomeIcon icon={faGithub} size='4x' />
-                            </ButtonIcon>
-                            <ButtonIcon
-                                target='_blank'
                                 href='https://twitter.com/Byron__Mejia'
                                 rel='noopener noreferrer'
                                 aria-label='Twitter'
@@ -66,6 +60,14 @@ const IndexPage = () => (
                                 aria-label='LinkedIn'
                             >
                                 <FontAwesomeIcon icon={faLinkedin} size='4x' />
+                            </ButtonIcon>
+                            <ButtonIcon
+                                target='_blank'
+                                href='https://github.com/byronmejia'
+                                rel='noopener noreferrer'
+                                aria-label='Source Code'
+                            >
+                                <FontAwesomeIcon icon={faCode} size='4x' />
                             </ButtonIcon>
                         </ButtonGroup>
                     </ProfileWrapper>
