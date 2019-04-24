@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import SEO from '../components/seo';
 import GlobalStyleWrapper from '../styles/global.style.wrapper';
-import HomeLayout, { RegularLayout, ArticleLayout } from '../components/layouts/home';
+import HomeLayout, { ArticleLayout } from '../components/layouts/home';
 import { ThemeProvider } from 'styled-components';
 import PrimaryTheme, { SecondaryTheme } from '../styles/theme';
 import { ProfileWrapper } from '../components/home/profile';
 import Logo from '../components/home/logo';
 import { Header } from '../components/ui/typography/header.main';
 import ButtonGroup from '../components/ui/button/button.group';
-import Button from '../components/ui/button/button';
+import ButtonIcon from '../components/ui/button-icon/button-icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Paragraph } from '../components/ui/typography/paragraph';
@@ -43,30 +43,30 @@ const IndexPage = () => (
                         <Header>Byron Mejia</Header>
                         <Header as='p'>Software Developer @ Clipchamp</Header>
                         <ButtonGroup>
-                            <Button
+                            <ButtonIcon
                                 target='_blank'
                                 href='https://github.com/byronmejia'
                                 rel='noopener noreferrer'
                                 aria-label='Github'
                             >
                                 <FontAwesomeIcon icon={faGithub} size='4x' />
-                            </Button>
-                            <Button
+                            </ButtonIcon>
+                            <ButtonIcon
                                 target='_blank'
                                 href='https://twitter.com/Byron__Mejia'
                                 rel='noopener noreferrer'
                                 aria-label='Twitter'
                             >
                                 <FontAwesomeIcon icon={faTwitter} size='4x' />
-                            </Button>
-                            <Button
+                            </ButtonIcon>
+                            <ButtonIcon
                                 target='_blank'
                                 href='https://www.linkedin.com/in/byronmejia/'
                                 rel='noopener noreferrer'
                                 aria-label='LinkedIn'
                             >
                                 <FontAwesomeIcon icon={faLinkedin} size='4x' />
-                            </Button>
+                            </ButtonIcon>
                         </ButtonGroup>
                     </ProfileWrapper>
                 </HomeLayout>
