@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import SEO from '../components/atomics/seo';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+import { MainLayout } from '../layouts/main-layout';
 
 interface BlogPostTemplatePropType {
     data: {
@@ -16,12 +17,13 @@ interface BlogPostTemplatePropType {
 }
 
 const BlogPostTemplate: FunctionComponent<BlogPostTemplatePropType> = ({ data }) => (
-    <div>
+    <MainLayout>
+        <Link to='/blog'>Back to Blog</Link>
         <SEO title={`Byron's Blog - ${data.markdownRemark.frontmatter.title}`} />
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         <div>{data.markdownRemark.frontmatter.date}</div>
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-    </div>
+    </MainLayout>
 );
 
 export const pageQuery = graphql`

@@ -5,6 +5,7 @@ import SEO from '../../components/atomics/seo';
 import { Header } from '../../components/atomics/typography/header.main';
 import { BlogPreviewNode } from '../../components/blog/blog-preview.model';
 import { BlogPreview } from '../../components/blog/blog-preview.component';
+import { MainLayout } from '../../layouts/main-layout';
 
 interface BlogIndexProps {
     data: {
@@ -17,7 +18,7 @@ interface BlogIndexProps {
 export const BlogIndex: FunctionComponent<BlogIndexProps> = props => {
     const posts = props.data.allMarkdownRemark.edges.map(x => x.node);
     return (
-        <div>
+        <MainLayout>
             <SEO
                 title='Blog'
                 keywords={[
@@ -39,7 +40,7 @@ export const BlogIndex: FunctionComponent<BlogIndexProps> = props => {
             {posts.map(post => (
                 <BlogPreview key={post.frontmatter.title + post.frontmatter.title} node={post} />
             ))}
-        </div>
+        </MainLayout>
     );
 };
 
@@ -54,6 +55,7 @@ export const pageQuery = graphql`
                     frontmatter {
                         date(formatString: "MMMM DD, YYYY")
                         title
+                        path
                     }
                 }
             }

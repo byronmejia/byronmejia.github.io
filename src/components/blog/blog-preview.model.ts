@@ -3,6 +3,7 @@ export interface BlogPreviewNode {
         excerpt: string;
         frontmatter: {
             date: string;
+            path: string;
             title: string;
         };
     };

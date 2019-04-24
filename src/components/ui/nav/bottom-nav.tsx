@@ -30,9 +30,12 @@ export const FooterContainer = styled.footer`
 export const BottomNav: FunctionComponent<NavProps> = props => (
     <FooterContainer>
         <BottomNavContainer>
-            <Paragraph>
-                Byron Mejia <br /> software developer, dog owner, and stuff
-            </Paragraph>
+            <div>
+                <Paragraph as={'summary'}>
+                    Byron Mejia <br /> software developer, dog owner, and stuff
+                </Paragraph>
+            </div>
+
             <BottomNavGroup>
                 <NavList>
                     {props.menuQuery.site.siteMetadata.menuLinks.map(link => (

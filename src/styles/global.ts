@@ -18,7 +18,8 @@ export const GlobalStyle = createGlobalStyle`
         height: 100%;
         margin: 0;
         font-family: 'Open Sans', sans-serif;
-        background-color: ${PrimaryTheme.primaryBackground}
+        background-color: ${PrimaryTheme.primaryBackground};
+        color: ${PrimaryTheme.primaryColor};
     }
 
     @media print {
