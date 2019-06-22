@@ -9,4 +9,11 @@ export const ButtonIcon = styled.a`
     }
 `;
 
+export const ButtonIconWithCaption = styled(ButtonIcon)`
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
 export default ButtonIcon;

@@ -4,16 +4,21 @@ import { ProfileWrapper } from '../components/home/profile';
 import Logo from '../components/home/logo';
 import { Header } from '../components/atomics/typography/header.main';
 import ButtonGroup from '../components/atomics/button/button.group';
-import ButtonIcon from '../components/atomics/button-icon/button-icon';
+import ButtonIcon, { ButtonIconWithCaption } from '../components/atomics/button-icon/button-icon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faCode } from '@fortawesome/free-solid-svg-icons/faCode';
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons/faAngleDoubleDown';
 import { Paragraph } from '../components/atomics/typography/paragraph';
 import { Columns } from '../components/layouts/columns';
 import { MainLayout } from '../layouts/main-layout';
 import SEO from '../components/atomics/seo';
 import Stars from '../components/stars/stars';
+
+enum INDEX_ELEMENT_IDS {
+    ABOUT = 'aboutMe',
+}
 
 const IndexPage = () => (
     <MainLayout>
@@ -70,10 +75,16 @@ const IndexPage = () => (
                         <FontAwesomeIcon icon={faCode} size='4x' />
                     </ButtonIcon>
                 </ButtonGroup>
+                <ButtonGroup>
+                    <ButtonIconWithCaption href={'#' + INDEX_ELEMENT_IDS.ABOUT}>
+                        <span>Learn more about me</span>
+                        <FontAwesomeIcon icon={faAngleDoubleDown} size='2x' />
+                    </ButtonIconWithCaption>
+                </ButtonGroup>
             </ProfileWrapper>
             <Stars />
         </HomeLayout>
-        <ArticleLayout style={{ width: '100vw', minHeight: '50vh' }}>
+        <ArticleLayout style={{ width: '100vw', minHeight: '50vh' }} id={INDEX_ELEMENT_IDS.ABOUT}>
             <ProfileWrapper style={{ textAlign: 'center' }}>
                 <Header>Who am I?</Header>
                 <Columns>
