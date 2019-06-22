@@ -13,6 +13,7 @@ import { Paragraph } from '../components/atomics/typography/paragraph';
 import { Columns } from '../components/layouts/columns';
 import { MainLayout } from '../layouts/main-layout';
 import SEO from '../components/atomics/seo';
+import Stars from '../components/stars/stars';
 
 const IndexPage = () => (
     <MainLayout>
@@ -41,7 +42,7 @@ const IndexPage = () => (
                 <Paragraph style={{ textAlign: 'center' }}>
                     I'm not a magician, but tricking computers into creating experiences comes
                     pretty close to magic. <br />
-                    We call that <code>Programming</code>
+                    We call that <code style={{ fontSize: '1.3em' }}>Programming</code>
                 </Paragraph>
                 <ButtonGroup>
                     <ButtonIcon
@@ -70,6 +71,7 @@ const IndexPage = () => (
                     </ButtonIcon>
                 </ButtonGroup>
             </ProfileWrapper>
+            <Stars />
         </HomeLayout>
         <ArticleLayout style={{ width: '100vw', minHeight: '50vh' }}>
             <ProfileWrapper style={{ textAlign: 'center' }}>
