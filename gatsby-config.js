@@ -17,7 +17,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`,
+    // I need to solve a runtime error here
+    //`gatsby-plugin-styled-components`,
     `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,

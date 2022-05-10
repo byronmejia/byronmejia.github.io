@@ -1,0 +1,42 @@
+{
+    "name": "byron-mejia",
+    "version": "1.0.0",
+    "private": true,
+    "description": "byron-mejia",
+    "author": "Byron Mejia",
+    "keywords": ["gatsby"],
+    "scripts": {
+        "develop": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@mdx-js/mdx": "v1",
+        "@mdx-js/react": "v1",
+        "babel-plugin-styled-components": "^2.0.7",
+        "gatsby": "^4.13.1",
+        "gatsby-plugin-google-analytics": "^4.13.0",
+        "gatsby-plugin-image": "^2.13.0",
+        "gatsby-plugin-manifest": "^4.13.0",
+        "gatsby-plugin-mdx": "^3.13.0",
+        "gatsby-plugin-react-helmet": "^5.13.0",
+        "gatsby-plugin-sharp": "^4.13.0",
+        "gatsby-plugin-sitemap": "^5.13.0",
+        "gatsby-plugin-styled-components": "^5.13.0",
+        "gatsby-source-filesystem": "^4.13.0",
+        "gatsby-transformer-sharp": "^4.13.0",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-helmet": "^6.1.0",
+        "styled-components": "^5.3.5"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.31",
+        "@types/react": "^17.0.44",
+        "@types/react-dom": "^17.0.16",
+        "typescript": "^4.6.4"
+    }
+}
